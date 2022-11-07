@@ -1,0 +1,62 @@
+@import url(https://fonts.google.com/specimen/Lato?query=Łukasz+Dziedzic&category=Sans+Serif,Monospace&subset=latin);
+
+html {
+  box-sizing: border-box;
+}
+.header__wraper {
+  display:flex;
+  background-color: #ff8789a2;
+border-radius: 10px;
+font-family:"Lato";
+font-size: 1.2em;
+font-weight: bold;
+}
+
+
+.header__logo {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.header__logo--img{
+  max-width: 120px;
+  border-radius: 50%;
+  height: auto;
+  margin-left: 15px;
+}
+
+.header__nav {
+  display: flex;
+
+}
+.header__nav--nav{
+  width: auto;
+  padding: 10px;
+  display: flex;
+gap: 30px;
+
+}
+.header__nav--ul{
+  display: flex;
+}
+
+.header__nav--ul, .header__login--ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5em;
+}
+
+.header__nav--a {
+  text-decoration: none;
+}
+
+.header__login {
+display: flex;
+margin-right: 0;
+margin-left: auto;
+padding: 10px;
+}
+.header__login--a{
+  text-decoration: none
+}
