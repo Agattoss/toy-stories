@@ -5,7 +5,7 @@ html {
 }
 .header__wraper {
   display:flex;
-  background-color: #ff8789a2;
+  background-color: #ff878953;
 border-radius: 10px;
 font-family:"Lato";
 font-size: 1.2em;
@@ -23,6 +23,10 @@ font-weight: bold;
   border-radius: 50%;
   height: auto;
   margin-left: 15px;
+  position: relative;
+  top: 50%;
+ ;
+  transform: translateY(-50%);
 }
 
 .header__nav {
@@ -35,6 +39,7 @@ font-weight: bold;
   display: flex;
 gap: 30px;
 
+
 }
 .header__nav--ul{
   display: flex;
@@ -45,18 +50,17 @@ gap: 30px;
   display: flex;
   justify-content: space-evenly;
   gap: 5em;
+  align-items: center;
 }
 
-.header__nav--a {
+.header__nav--a, .header__login--a  {
   text-decoration: none;
+  padding: 10px;
 }
 
-.header__login {
+.header__login{
 display: flex;
 margin-right: 0;
 margin-left: auto;
 padding: 10px;
-}
-.header__login--a{
-  text-decoration: none
 }
