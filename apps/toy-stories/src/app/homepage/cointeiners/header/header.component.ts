@@ -3,7 +3,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'toy-stories-header',
+  // eslint-disable-next-line @angular-eslint/component-selector
+  selector: 'ts-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
