@@ -2,6 +2,7 @@
   display: flex;
   background-color: #ff87893c;
   border-radius: 10px;
+  font-family: Neucha, sans-serif;
   font-size: 1.2em;
   font-weight: bold;
   width: 90%;
@@ -9,60 +10,47 @@
   max-width: 1050px;
 }
 //Logo in the left corner
-
 .logo {
   margin-left: 0;
   margin-right: auto;
-  flex:1;
-
+  flex: 1;
   &__img {
-   max-width: 120px;
-  border-radius: 66% 16% 53% 24%; // Irregular shape
-  height: auto;
-  margin-left: 15px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  border-style: solid;
-  border-width: 2px;
+    max-width: 120px;
+    //border-radius: 66% 16% 53% 24%; // Irregular shape
+    height: auto;
+    margin-left: 15px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 2px;
   }
 }
-
 //menu in the middle
-
 .menu {
   display: flex;
   flex: 4;
-
   .nav {
     width: auto;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-
     &__a {
       text-decoration: none;
-      padding: 10px;
       color: #41403e;
       align-self: center;
-      background-color: rgba(255, 135, 137, 0.498);
-      background-image: none;
+      background-color: #ff87897f;
       background-position: 0 90%;
-      background-repeat: repeat no-repeat;
       background-size: 4px 3px;
       border-style: solid;
       border-width: 2px;
       box-sizing: border-box;
-      color: #41403e;
       cursor: pointer;
       display: inline-block;
-      font-family: Neucha, sans-serif;
       font-size: 1rem;
       font-weight: bold;
       line-height: 23px;
-      outline: none;
       padding: 0.75rem;
-      text-decoration: none;
       transition: all 235ms ease-in-out;
       border-bottom-left-radius: 15px 255px;
       border-bottom-right-radius: 225px 15px;
@@ -70,81 +58,56 @@
       border-top-right-radius: 15px 225px;
     }
     &__a:hover {
-      box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+      box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
       transform: translate3d(0, 2px, 0);
     }
-     &__a:focus {
-      box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    &__a:focus {
+      box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
     }
-
-
     &__ul {
       display: flex;
-      font-family: Neucha, sans-serif;
+      justify-content: space-evenly;
       font-weight: bold;
       list-style-type: none;
-      display: flex;
-      justify-content: space-evenly;
       align-items: center;
       width: 80%;
       white-space: nowrap;
-
-
-
     }
   }
 }
-
 // Login/Sign up section in the right corner
-
 .login {
   display: flex;
-  flex:1;
-  margin: auto;
+  flex: 1;
   justify-content: space-evenly;
   white-space: nowrap;
   margin-right: 15px;
-
   &__btn {
+    display: inline-block;
     align-self: center;
     background-color: #5dafc2;
-    background-image: none;
     background-position: 0 90%;
-    background-repeat: repeat no-repeat;
     background-size: 4px 3px;
-   // border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-    border-style: solid;
-    border-width: 2px;
-   // box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
     box-sizing: border-box;
-    color: #41403e;
     cursor: pointer;
-    display: inline-block;
-    font-family: Neucha, sans-serif;
+    color: #41403e;
     font-size: 1rem;
     font-weight: bold;
     line-height: 23px;
-    outline: none;
-    padding: .75rem;
-    text-decoration: none;
+    padding: 0.75rem;
     transition: all 235ms ease-in-out;
+    border-style: solid;
+    border-width: 2px;
     border-bottom-left-radius: 15px 255px;
     border-bottom-right-radius: 225px 15px;
     border-top-left-radius: 255px 15px;
     border-top-right-radius: 15px 225px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
   }
   &__btn:hover {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
     transform: translate3d(0, 2px, 0);
   }
   &__btn:focus {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
   }
 }
-
-
-
-
