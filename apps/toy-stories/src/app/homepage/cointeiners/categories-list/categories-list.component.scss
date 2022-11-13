@@ -7,6 +7,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "stuffedToys dolls lego"
+  "puzzles books others";
   gap: 10px 10px;
   place-content: center;
 }
@@ -41,5 +44,47 @@
     display: inline-block;
     font-size: 1.7em;
     font-weight: bold;
+  }
+}
+#stuffedToys{
+  grid-area: "stuffedToys";
+}
+#dolls{
+  grid-area: "dolls";
+}
+#lego{
+  grid-area: "lego";
+}
+#puzzles{
+  grid-area: "puzzles";
+}
+#books{
+  grid-area: "books";
+}
+#others{
+  grid-area: "stuffedToys";
+}
+
+@media (max-width: 650px) {
+  .categories__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-areas:
+     "stuffedToys dolls"
+     "lego puzzles"
+     "books others"
+  }
+}
+@media only screen and (max-width: 450px) {
+  .categories__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas:
+     "stuffedToys"
+     "dolls"
+     "lego "
+     "puzzles"
+     "books "
+     "others"
   }
 }
