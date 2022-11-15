@@ -1,12 +1,11 @@
 .header__wrapper {
   display: flex;
   border-radius: 10px;
+  width: 100%;
   font-family: Neucha, sans-serif;
   font-size: 1.2em;
   font-weight: bold;
-  width: 90%;
   margin: auto;
-  max-width: 1050px;
 }
 //Logo in the left corner
 .logo {
@@ -14,10 +13,11 @@
   margin-right: auto;
   flex: 1;
   &__img {
-    max-width: 115px;
+    min-height: 100px;
+    //max-width: 115px;
     //border-radius: 66% 16% 53% 24%; // Irregular shape
-    height: auto;
-    margin-left: 30px;
+
+
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -67,18 +67,18 @@
       font-weight: bold;
       list-style-type: none;
       align-items: center;
-      width: 80%;
+      width: 100%;
       white-space: nowrap;
+      padding: 0;
     }
   }
 }
 // Login/Sign up section in the right corner
 .login {
   display: flex;
-  flex: 1;
+  flex: 1.5;
   justify-content: space-evenly;
   white-space: nowrap;
-  margin-right: 15px;
   &__btn {
     display: inline-block;
     align-self: center;
@@ -107,4 +107,9 @@
   &__btn:focus {
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
   }
+}
+@media (max-width: 992px){
+.logo{
+  display: none;
+}
 }

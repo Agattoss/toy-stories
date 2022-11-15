@@ -1,7 +1,6 @@
 .categories__wrapper {
+  max-width: 600px;
   margin: 40px auto;
-  width: 90%;
-  max-width: 1050px;
   font-family: Neucha, sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -15,9 +14,10 @@
   display: flex;
   justify-content: center;
   &__a {
+    width: 100%;
+    max-width: 200px;
     text-decoration: none;
     display: inline-block;
-    max-width: 300px;
     min-width: 150px;
     height: auto;
     border: solid 2px;
@@ -70,7 +70,7 @@
 #others {
   grid-area: 'stuffedToys';
 }
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .categories__wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
