@@ -9,9 +9,12 @@
 .text {
   max-width: 700px;
   margin: 30px 30px 0 40px;
-  font-size: 40px;
+  font-size: 23px;
   color: #41403e;
   text-align: center;
+  &--highlight{
+    color:#5dafc2;
+  }
 }
 .img {
   max-width: 350px;
