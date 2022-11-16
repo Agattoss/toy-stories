@@ -1,5 +1,4 @@
-.container{
-  background-color: aliceblue;
+.container {
   padding: 20px;
 }
 @media (min-width: 1200px) {
@@ -14,7 +13,7 @@
     margin: auto;
   }
 }
-@media (min-width: 768px) and (max-width: 991.98px){
+@media (min-width: 768px) and (max-width: 991.98px) {
   .container {
     max-width: 600px;
     margin: auto;

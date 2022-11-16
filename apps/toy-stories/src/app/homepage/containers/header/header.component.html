@@ -3,8 +3,11 @@
     <img class="logo__img" src="../../../../assets/img/teddy-bear (1).svg" alt="Toy Stories">
   </div>
   <div class="menu">
+    <button mat-mini-fab class="hamburger-menu" color="accent" (click)="onToggleMenu()">
+      <mat-icon>{{isMenuOpen? "close": "menu"}}</mat-icon>
+    </button>
     <nav class="nav">
-      <ul class="nav__ul">
+      <ul class="nav__ul" [class.is-open]="isMenuOpen" [class.is-open]="isMenuOpen" id="hidden-nav">
         <li><a class="nav__a" href=#>Home</a></li>
         <li><a class="nav__a" href=#>About</a></li>
         <li><a class="nav__a" href=#>Contact</a></li>

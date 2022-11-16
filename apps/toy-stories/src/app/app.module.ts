@@ -7,6 +7,11 @@ import { CategoriesListComponent } from './homepage/containers/categories-list/c
 import { HeaderComponent } from './homepage/containers/header/header.component';
 import { HeroComponent } from './homepage/components/hero/hero.component';
 import { FooterComponent } from './homepage/containers/footer/footer.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +21,15 @@ import { FooterComponent } from './homepage/containers/footer/footer.component';
     FooterComponent,
     CategoriesListComponent,
   ],
-  imports: [BrowserModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

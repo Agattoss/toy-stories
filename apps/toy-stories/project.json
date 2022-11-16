@@ -19,7 +19,10 @@
           "apps/toy-stories/src/favicon.ico",
           "apps/toy-stories/src/assets"
         ],
-        "styles": ["apps/toy-stories/src/styles.scss"],
+        "styles": [
+          "apps/toy-stories/src/styles.scss",
+          "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+        ],
         "scripts": []
       },
       "configurations": {
