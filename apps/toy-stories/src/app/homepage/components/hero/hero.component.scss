@@ -8,8 +8,8 @@
 }
 .text {
   max-width: 700px;
-  margin: 30px 30px 0 40px;
-  font-size: 23px;
+  margin: 40px 30px 0 40px;
+  font-size: 30px;
   color: #41403e;
   text-align: center;
   &--highlight{
@@ -17,16 +17,21 @@
   }
 }
 .img {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .img {
+    display: inline-block;
   max-width: 350px;
   &__logo {
     width: 100%;
   }
 }
-@media (max-width: 992px) {
-  .img {
-    display: none;
-  }
   .text {
-    font-size: 30px;
+    font-size: 40px;
+    h1{
+      margin-top: inherit;
+    }
   }
 }
